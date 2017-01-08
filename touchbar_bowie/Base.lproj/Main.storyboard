@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="TouchBar Bowie by @rog" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="maxSize" type="size" width="480" height="270"/>
+                    </window>
+                    <touchBar key="touchBar" id="xmN-zC-h8c">
+                        <touchBarItems>
+                            <touchBarItem id="HrR-h7-NCn">
+                                <viewController key="viewController" id="mWw-hs-xC2">
+                                    <view key="view" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-5M-j3l">
+                                        <rect key="frame" x="0.0" y="0.0" width="686" height="30"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x10-iS-P7w" customClass="BowieCanvas" customModule="touchbar_bowie" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="685" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="Kxz-Id-Bjk"/>
+                                                    <constraint firstAttribute="width" constant="685" id="R3d-YT-L8Y"/>
+                                                </constraints>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="mGf-ax-GZr"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="960" id="8fT-fS-RIV"/>
+                                            <constraint firstItem="x10-iS-P7w" firstAttribute="top" secondItem="cF0-5M-j3l" secondAttribute="top" id="ckE-w9-eCn"/>
+                                            <constraint firstItem="x10-iS-P7w" firstAttribute="leading" secondItem="cF0-5M-j3l" secondAttribute="leading" id="g6H-Pm-YqB"/>
+                                            <constraint firstAttribute="bottom" secondItem="x10-iS-P7w" secondAttribute="bottom" id="oSM-F2-fZ7"/>
+                                            <constraint firstAttribute="height" constant="38" id="rV9-Hn-8dZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="x10-iS-P7w" secondAttribute="trailing" constant="275" id="wT8-Om-0tY"/>
+                                        </constraints>
+                                    </view>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="202"/>
+        </scene>
+    </scenes>
+</document>
