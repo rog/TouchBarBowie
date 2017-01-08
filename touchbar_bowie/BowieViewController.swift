@@ -45,7 +45,7 @@ class BowieViewController: NSViewController , NSTouchBarDelegate{
     self.muteBtn.isHidden = true
 
     
-    bkg.image = NSImage(named: "bowie.jpg”)
+    bkg.image = NSImage(named: "bowie.jpg")
     bkg.frame = CGRect(x: 0, y: 0, width: 400, height: 300)
     bkg.animates = true
   }

@@ -5,7 +5,7 @@
 
 ---
 
-[Download ⬇️]()
+[Download ⬇️](https://github.com/rog/TouchBowie/releases)
 
 [Donate 💜](http://www.cancerresearchuk.org/support-us/donate)
 
