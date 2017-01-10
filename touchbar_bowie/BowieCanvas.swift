@@ -15,7 +15,7 @@ class BowieCanvas: NSImageView {
 
     var xPosition: CGFloat = 0 {
         didSet {
-            self.frame = CGRect(x: xPosition, y: 0, width: 685, height: 50)
+            self.frame = CGRect(x: xPosition, y: 0, width: 685, height: 55)
         }
     }
     
@@ -32,7 +32,7 @@ class BowieCanvas: NSImageView {
         
 
         self.canDrawSubviewsIntoLayer = true
-        self.frame = CGRect(x: xPosition, y: 0, width: 685, height: 50)
+        self.frame = CGRect(x: xPosition, y: 0, width: 685, height: 55)
     }
     
     override func touchesBegan(with event: NSEvent) {
